@@ -13,6 +13,27 @@ public class Branch <V>{
 
 
     private final String key;
+
+    public String getKey() {
+        return key;
+    }
+
+    public HashMap<String, Branch> getBranches() {
+        return branches;
+    }
+
+    public void setBranches(HashMap<String, Branch> branches) {
+        this.branches = branches;
+    }
+
+    public List<V> getElements() {
+        return elements;
+    }
+
+    public void setElements(List<V> elements) {
+        this.elements = elements;
+    }
+
     private HashMap<String,Branch> branches = new HashMap<>(5);
     private List<V> elements = new ArrayList<V>(5);
 
